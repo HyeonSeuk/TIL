@@ -10,6 +10,6 @@
     4. Pull Request를 통해 협업을 진행한다.
     5. 변경사항을 반영하고 싶다면, master branch에 병합한다.
 
-|init|Fork & Pull Model|
+|Shared Repository|Fork & Pull Model|
 |:---:|:---:|
 |Collaborator에 등록한 상태에서 동일한 저장소를 공유하여 활용하는 방식|Collaborator에 등록되지 않은 상태에서 GitHub 기반의 오픈 소스 방식|
