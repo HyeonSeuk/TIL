@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        
+        .nav__position {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav__head {
+            display: flex;
+            float: right;
+        }
+        .box {
+            width: 100%;
+            height: auto;
+        }
+        .side__bar {
+            
+            width: 10%;
+            margin-top: 80px;
+        }
+        .main__bar {
+            
+            display: flex;
+            flex-direction: row;
+            width: 55%;
+            margin-top: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .main__bar__contentbox1{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .main__content__img {
+            display: flex;
+            width: 197px;
+            height: 260px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+        .main__content__numberbox{
+            background-color: #fb4357;
+            color: white;
+            display:flex;
+            width: 197px;
+            justify-content: center;
+            text-align: center;
+            margin-left: 50px;
+        }
+        .header__join0 {
+          position: absolute;
+          margin-left: 1150px;
+          text-decoration: none;
+        }
+        .header__join {
+          position: absolute;
+          margin-left: 1200px;
+          text-decoration: none;
+          line-height: 50px;
+          background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+          box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+          color: white;
+          border-radius: 20px;
+          width: 4%;
+          text-align: center;
+          
+        }
+        .header__join2 {
+          position: absolute;
+          margin-left: 1300px;
+          text-decoration: none;
+          line-height: 50px;
+          background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+          box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+          color: white;
+          border-radius: 20px;
+          width: 4%;
+          text-align: center;
+        }
+        .header__join3 {
+            position: absolute;
+            margin-left: 1400px;
+            text-decoration: none;
+            line-height: 50px;
+            background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+            box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+            color: white;
+            border-radius: 20px;
+            width: 4%;
+            text-align: center;
+          }
+        .header__join4 {
+            position: absolute;
+            margin-left: 1500px;
+            text-decoration: none;
+            line-height: 50px;
+            background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+            box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+            color: white;
+            border-radius: 20px;
+            width: 4%;
+            text-align: center;
+        }
+        .header__box {
+          position: relative;
+          display: flex;
+          
+        }
+        .header__box__box{
+            display:flex;
+            width:36px;
+            height:36px;
+        }
+        footer {
+            text-align: center;
+        }
+
+        .main__button {
+            width: 97px;
+            height: 25px;
+            cursor: pointer;
+            background-color: #fb4357;
+            border: 1px solid #fb4357;
+            color: white;
+            border-radius: 6px;
+        }
+        article {
+            
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .margin {
+            margin-left: 50px;
+        }
+        .margin2 {
+            margin-left: 50px;
+        }
+        .sider--bar {
+            text-decoration: none;
+        }
+        .sider--color {
+            color: black;
+        }
+
+        .main__text {
+            display:inline-block;
+            width: 197px;
+            white-space : nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .main__font {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .side__bar__font {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+        .btn_fixedTicketing {
+            position: absolute;
+            left: auto;
+            right: 80px;
+            width: 136px;
+            padding: 12px 0 14px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.500em;
+            background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+            box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+            border-radius: 25px;
+            text-decoration: none;
+            
+        }
+        
+            .btn_gotoTop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            background-color: white;
+            border: 1px solid #000;
+            box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+            border-radius: 50%;
+            
+            
+         }
+
+            .fixedBtn_wrap {
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            right: 0;
+            bottom: 80px;
+            min-height: 50px;
+            margin-left: 440px;
+            text-align: center;
+            z-index: 7;
+            }   
+
+            .fixedBtn_wrap__top {
+                display: flex;
+                justify-content: flex-end;
+                position: fixed;
+                right: 35px;
+                bottom: 80px;
+                min-height: 50px;
+                margin-left: 440px;
+                text-align: center;
+                z-index: 7;
+            }
+    </style>
+</head>
+<body>
+    <header class="header__box">
+        <a href="https://www.cgv.co.kr/" target="_blank">
+        <img src="cgv.png" alt="Logo">
+        </a>
+        <header class="header__join0"  href="gv.co.kr/culture-event/event/detailViewUnited.aspx?seq=31426&menu=006">
+        <img src="https://img.cgv.co.kr/WingBanner/2023/0208/16758461047540.png" alt=""></header>
+        <header>
+           <div><a class="header__join" href="">로그인</a></div>
+        </header>
+           <div><a class="header__join2" href="">회원가입</a></div>
+           <div><a class="header__join3" href="">MY CGV</a></div>
+           <div><a class="header__join4" href="">고객센터</a></div>
+    </header>
+    <hr style= 'border: solid 1px red;' width="100%">
+    <nav class="nav__position box">
+        <div class="side__bar side__bar__font">
+            <p><a class="sider--bar sider--color" href="http://www.cgv.co.kr/movies/?lt=1&ft=0"><b>영화</b></a></p>
+            <p><a class="sider--bar sider--color" href="http://www.cgv.co.kr/theaters/"><b>극장</b></a></p>
+            <p><a class="sider--bar sider--color" href="http://www.cgv.co.kr/ticket/"><b>예매</b></a></p>
+            <p><a class="sider--bar sider--color" href="http://www.cgv.co.kr/culture-event/popcorn-store/"><b>스토어</b></a></p>
+            <p><a class="sider--bar sider--color" href="http://www.cgv.co.kr/culture-event/event/defaultNew.aspx#1"><b>이벤트</b></a></p>
+            <p><a class="sider--bar sider--color" href="http://www.cgv.co.kr/movies/?lt=1&ft=0"><b>혜택</b></a></p>
+        </div>
+    
+        <main class="main__bar">
+            <div class="fixedBtn_wrap">
+                <a href="http://www.cgv.co.kr/ticket/" class="btn_fixedTicketing">예매하기</a>
+                <a href="#" class="btn_gotoTop"><img src="https://img.cgv.co.kr/R2014/images/common/btn/gotoTop.png" alt="top_move"></a>
+            </div>
+            <article>
+                <div>
+                    <div class="main__bar__contentbox1">
+                        <div>
+                            <div class="main__content__numberbox" >NO.1</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86826/86826_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__text main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86826">귀멸의 칼날-상현집결, 그리고 도공 마을로</a>
+                                <p>예메율 28.8%</p>
+                                <p>2023.03.02 개봉</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20032055&MOVIE_CD_GROUP=20031992"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.2</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86829/86829_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86829">아임 히어로 더 파이널</a>
+                                <p>예메율 24.7%</p>
+                                <p>2023.03.01 개봉</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20032037&MOVIE_CD_GROUP=20032002"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.3</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86815/86815_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86815">스즈메의 문단속</a>
+                                <p>예메율 14.6%</p>
+                                <p>2023.03.08 개봉  D-5</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20032088&MOVIE_CD_GROUP=20031945"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <img  class= "margin" src="https://adimg.cgv.co.kr/images/202302/house/CGV_BUGS_160x300.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="main__bar__contentbox1">
+                        <div>
+                            <div class="main__content__numberbox" >NO.4</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86814/86814_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86814">대외비</a>
+                            <p>예메율 7.5%</p>
+                            <p>2023.03.01 개봉</p>
+                            <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031944&MOVIE_CD_GROUP=20031944"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.5</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86720/86720_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86720">더 퍼스트 슬램덩크</a>
+                                <p>예메율 3.5%</p>
+                                <p>2023.01.04 개봉</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031676&MOVIE_CD_GROUP=20031612"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.6</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86797/86797_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86797">멍뭉이</a>
+                                <p>예메율 3.2%</p>
+                                <p>2023.03.01 개봉</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031861&MOVIE_CD_GROUP=20031861"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.7</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86839/86839_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86839">똑똑똑</a>
+                                <p>예메율 2.7%</p>
+                                <p>2023.03.08 개봉  D-5</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20032065&MOVIE_CD_GROUP=20032065"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__bar__contentbox1">
+                        <div>
+                            <div class="main__content__numberbox" >NO.8</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86770/86770_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86770">서치 2</a>
+                                <p>예메율 2.5%</p>
+                                <p>2023.02.22 개봉</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031977&MOVIE_CD_GROUP=20031774"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.9</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86827/86827_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86827">더 웨일</a>
+                                <p>예메율 1.8%</p>
+                                <p>2023.03.01 개봉</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031996&MOVIE_CD_GROUP=20031996"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.10</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86824/86824_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86824">샤잠! 신들의 분노</a>
+                                <p>예메율 1.5%</p>
+                                <p>2023.03.15 개봉  D-12</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031990&MOVIE_CD_GROUP=20031990"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main__content__numberbox" >NO.11</div>
+                            <img class="main__content__img" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86798/86798_320.jpg" alt="poster">
+                            <div class="margin">
+                                <a class="sider--bar main__font" href="http://www.cgv.co.kr/movies/detail-view/?midx=86798">카운트</a>
+                                <p>예메율 1.4%</p>
+                                <p>2023.02.22 개봉</p>
+                                <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20032135&MOVIE_CD_GROUP=20031862"><button class="main__button">예매하기</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </nav>
+    <footer>
+        <p>2200109 민병준 2200090 서현석 2200053 박지현</p>
+    </footer>
+</body>
+</html>
